@@ -1,0 +1,27 @@
+[user]
+    name = Andrew O'Drain
+    email = andrewodrain@outlook.com
+
+[core]
+    fsmonitor = true
+    editor = nano
+    autocrlf = input
+    excludesfile = ~/.gitignore_global
+    pager = less -FRX
+
+[color]
+    ui = auto
+
+[push]
+    default = simple
+
+[merge]
+    conflictstyle = diff3
+
+[credential]
+    helper = cache  # switch to cache if/when safe, previously the helper value was 'store'
+
+[safe]
+    directory = /opt/modsecurity
+    directory = /opt/ModSecurity-nginx
+
