@@ -25,3 +25,9 @@
     directory = /opt/modsecurity
     directory = /opt/ModSecurity-nginx
 
+[filter "nbstripout"]
+	clean = /home/moose/.pyenv/shims/python3 -m nbstripout
+	smudge = cat
+	required = true
+[diff "ipynb"]
+	textconv = /home/moose/.pyenv/shims/python3 -m nbstripout -t

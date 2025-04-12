@@ -174,12 +174,16 @@ export ***REMOVED***=***REMOVED***
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
 
 
-# PYENV
-export PYENV_ROOT="$HOME/.pyenv/pyenv"
+# PYENV shell activation
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$(pyenv root)/shims:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
 
 # VS Code
 export PATH=$PATH:"/mnt/c/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin"
