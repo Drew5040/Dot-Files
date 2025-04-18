@@ -7,8 +7,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.pyo
-*.pyc
+
 
 # Ignore virtual environments
 .venv/
@@ -55,6 +54,15 @@ target/
 *.log
 *.out
 *.pdf
+
+# Sensitive 
+*token*
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.gpg
 
 # Ignore images
 *.png
