@@ -36,6 +36,7 @@ git config --global merge.conflictstyle diff3
 git config --global credential.helper cache
 git config --global core.pager "less -FRX"
 git config --global color.ui auto
+git config --global --unset core.fsmonitor
 
 echo "✅ Git configuration updated"
 

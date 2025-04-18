@@ -3,7 +3,6 @@
     email = andrewodrain@outlook.com
 
 [core]
-    fsmonitor = true
     editor = nano
     autocrlf = input
     excludesfile = ~/.gitignore_global
