@@ -27,15 +27,16 @@ Each folder is managed using [`stow`](https://www.gnu.org/software/stow/), which
 ```bash
 git clone git@github.com:Drew5040/Dot-Files.git ~/Repositories/Dot-Files
 cd ~/Repositories/Dot-Files
+```
+### 2. Run the `bootstrap.sh` script
 
-### 2. Run the bootstrap.sh script
+```bash
 ./bootstrap.sh
 
 ```
 ---
 
 This will:
-
 - install system packages `(git, stow, build tools)`
 
 - symlink your dotfiles to ~ using `stow`
