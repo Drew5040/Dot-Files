@@ -31,3 +31,5 @@
 	required = true
 [diff "ipynb"]
 	textconv = /home/moose/.pyenv/shims/python3 -m nbstripout -t
+[init]
+	templateDir = /home/moose/.git-templates
