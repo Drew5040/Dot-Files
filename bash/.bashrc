@@ -140,35 +140,6 @@ export PATH="/bin:/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/home/moose/.local/bin:$PATH"
 
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***="0"
-
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-export ***REMOVED***=***REMOVED***
-
 
 # Display
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
@@ -192,11 +163,3 @@ export PATH=$PATH:"/mnt/c/Users/andre/AppData/Local/Programs/Microsoft VS Code/b
 # Auto-start ssh-agent and load GitHub key
 eval "$(ssh-agent -s)" > /dev/null
 ssh-add -l | grep all-repos-key > /dev/null || ssh-add ~/.ssh/all-repos-key
-
-
-# Custom Env Vars
-export ***REMOVED***
-export ***REMOVED***
-export ***REMOVED***
-export ***REMOVED***
-export ***REMOVED***

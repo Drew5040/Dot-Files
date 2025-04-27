@@ -37,12 +37,26 @@ db.sqlite*
 *.min.css
 *.gz
 
-# Ignore build/compiled directories
-bin/
+# Build artifacts
 build/
 dist/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test cache
+.pytest_cache/
+
+# Other possible build dirs
+bin/
 out/
 target/
+
+# Pypi
+.pypirc
+
 
 # Ignore Jupyter Notebooks
 .ipynb_checkpoints/

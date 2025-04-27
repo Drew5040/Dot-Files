@@ -1,13 +1,13 @@
 
 # 🛠️ELP.md – Dot-Files Environment Setup Guide
 
-> A quick-reference guide for understanding and restoring your full development environment using this repository.
+> A quick-reference guide for understanding and restoring my full development environment using this repository.
 
 ---
 
 ## 📁 What Is This Repo?
 
-This repository stores **modular dotfiles** and automation scripts that configure your personalized Linux (WSL) development environment.
+This repository stores **modular dotfiles** and automation scripts that configure my personalized Linux (WSL) development environment.
 
 It includes:
 - Bash, Git, WSL, and editor configuration
@@ -20,7 +20,7 @@ Each folder is managed using [`stow`](https://www.gnu.org/software/stow/), which
 
 ---
 
-## 🚀 How to Restore This Environment (One Command)
+## 🚀 How to Restore my Environment (Three Commands)
 
 ### 1. Clone the repo:
 
@@ -39,7 +39,7 @@ cd ~/Repositories/Dot-Files
 This will:
 - install system packages `(git, stow, build tools)`
 
-- symlink your dotfiles to ~ using `stow`
+- symlink my dotfiles to ~ using `stow`
 
 - install and configure `pyenv + venv`
 
@@ -47,7 +47,7 @@ This will:
 
 - set up `nbstripout` and `pre-commit` automation
 
-After this, your environment is fully restored and ready to use.
+After this, my environment is fully restored and ready to use.
 
 ---
 
