@@ -140,6 +140,8 @@ export PATH="/bin:/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/home/moose/.local/bin:$PATH"
 
+# Micro-Structure-Explorer PYTHONPATH
+export PYTHONPATH="$HOME/Repositories/micro-structure-explorer"
 
 # Display
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
