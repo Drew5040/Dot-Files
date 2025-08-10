@@ -162,10 +162,14 @@ fi
 export PATH=$PATH:"/mnt/c/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin"
 
 
-# Start ssh-agent only if not already running
+# Ensure ssh-agent is running and key is loaded
 if ! pgrep -u "$USER" ssh-agent >/dev/null; then
-    eval "$(ssh-agent -s)" > /dev/null
+    # Start ssh-agent
+    eval "$(ssh-agent -s)" >/dev/null
 fi
 
-# Add key only if not already loaded
-ssh-add -l 2>/dev/null | grep -q all-repos-key || ssh-add ~/.ssh/all-repos-key
+# Check if SSH_AUTH_SOCK is set (agent is running in this shell)
+if [ -n "$SSH_AUTH_SOCK" ]; then
+    # Add key only if not already loaded
+    ssh-add -l 2>/dev/null | grep -q all-repos-key || ssh-add ~/.ssh/all-repos-key
+fi
