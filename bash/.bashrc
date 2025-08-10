@@ -162,6 +162,10 @@ fi
 export PATH=$PATH:"/mnt/c/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin"
 
 
-# Auto-start ssh-agent and load GitHub key
-eval "$(ssh-agent -s)" > /dev/null
-ssh-add -l | grep all-repos-key > /dev/null || ssh-add ~/.ssh/all-repos-key
+# Start ssh-agent only if not already running
+if ! pgrep -u "$USER" ssh-agent >/dev/null; then
+    eval "$(ssh-agent -s)" > /dev/null
+fi
+
+# Add key only if not already loaded
+ssh-add -l 2>/dev/null | grep -q all-repos-key || ssh-add ~/.ssh/all-repos-key
