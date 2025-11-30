@@ -22,6 +22,7 @@ env/
 
 # Ignore logs and databases
 *.log
+microstructure.log*
 *.sql
 *.sqlite
 *.sqlite3
